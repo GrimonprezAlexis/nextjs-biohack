@@ -76,3 +76,12 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.c-tablist {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
