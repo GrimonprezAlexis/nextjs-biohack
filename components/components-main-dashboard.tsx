@@ -55,7 +55,7 @@ export function MainDashboardComponent() {
         onValueChange={setActiveTab}
         className="space-y-4"
       >
-        <TabsList className="grid w-full grid-flow-col gap-2">
+        <TabsList className="flex overflow-x-auto w-full space-x-2 lg:grid lg:grid-cols-4 xl:grid-cols-6 gap-2 p-2">
           <TabsTrigger value="tasks">Tâches</TabsTrigger>
           <TabsTrigger value="planning">Planning</TabsTrigger>
           <TabsTrigger value="habits">Habitudes</TabsTrigger>
