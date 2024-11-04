@@ -94,7 +94,7 @@ export function StatistiqueBoard() {
           <div className="text-2xl font-bold">350 €</div>
           <Progress value={70} className="mt-2" />
           <p className="text-xs text-muted-foreground mt-2">
-            70% de l'objectif mensuel
+            70% de l&apos;objectif mensuel
           </p>
         </CardContent>
       </Card>
@@ -137,7 +137,7 @@ export function StatistiqueBoard() {
         <CardHeader>
           <CardTitle>Prochaines Actions</CardTitle>
           <CardDescription>
-            Tâches prioritaires pour aujourd'hui
+            Tâches prioritaires pour aujourd&apos;hui
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -148,7 +148,7 @@ export function StatistiqueBoard() {
             </li>
             <li className="flex items-center">
               <CheckCircle className="h-4 w-4 mr-2 text-green-500" />
-              <span>Réunion d'équipe à 10h</span>
+              <span>Réunion d&apos;équipe à 10h</span>
             </li>
             <li className="flex items-center">
               <Zap className="h-4 w-4 mr-2 text-yellow-500" />

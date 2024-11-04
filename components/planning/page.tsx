@@ -23,7 +23,7 @@ export default function PlanningBoard() {
       <CardContent>
         <div className="space-y-4">
           <div className="flex items-center justify-between p-2 bg-secondary rounded">
-            <span>Réunion d'équipe</span>
+            <span>Réunion d&apos;équipe</span>
             <div className="flex items-center">
               <CalendarDays className="mr-2 h-4 w-4" />
               <span>14:00</span>

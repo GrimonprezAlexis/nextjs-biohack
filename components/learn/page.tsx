@@ -8,14 +8,15 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/use-toast";
 import { Progress } from "../ui/progress";
 import { BookOpen, CheckCircle, Clock } from "lucide-react";
 import { Badge } from "../ui/badge";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { toast } from "../ui/use-toast";
 
 export default function LearnBoard() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [courses, setCourses] = useState([
     {
       id: 1,
@@ -47,7 +48,7 @@ export default function LearnBoard() {
     },
   ]);
 
-  const startCourse = (topic) => {
+  const startCourse = (topic: string | number) => {
     toast({
       title: "Cours commencé",
       description: `Vous avez commencé le cours sur ${topic}.`,
@@ -93,7 +94,7 @@ export default function LearnBoard() {
           </div>
           <div className="p-4 bg-secondary rounded">
             <h4 className="font-semibold mb-2">Suggestion de lecture :</h4>
-            <p>"Atomic Habits" par James Clear</p>
+            <p>&quot;Atomic Habits&quot; par James Clear</p>
             <Button className="mt-2" onClick={buyBook}>
               Acheter le livre
             </Button>

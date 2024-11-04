@@ -10,7 +10,7 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/toast";
+import { toast } from "../ui/use-toast";
 
 export default function HabitsBoard() {
   const [habits, setHabits] = useState([
@@ -23,7 +23,7 @@ export default function HabitsBoard() {
     { name: "Journaling", days: [true, false, true, true, true, false, false] },
   ]);
 
-  const toggleHabitDay = (habitIndex, dayIndex) => {
+  const toggleHabitDay = (habitIndex: number, dayIndex: number) => {
     const newHabits = [...habits];
     newHabits[habitIndex].days[dayIndex] =
       !newHabits[habitIndex].days[dayIndex];

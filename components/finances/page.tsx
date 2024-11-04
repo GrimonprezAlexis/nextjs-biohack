@@ -19,6 +19,7 @@ import {
 import { useState } from "react";
 import { Alert, AlertDescription, AlertTitle } from "../ui/alert";
 import { Button } from "../ui/button";
+import { toast } from "../ui/use-toast";
 
 export default function FinancesBoard() {
   const [bankConnected, setBankConnected] = useState(false);
@@ -115,7 +116,7 @@ export default function FinancesBoard() {
             <h4 className="font-semibold mb-2">Recommandations :</h4>
             <ul className="list-disc list-inside space-y-1">
               <li>Augmentez vos économies de 10% ce mois-ci</li>
-              <li>Envisagez d'investir dans des fonds indiciels</li>
+              <li>Envisagez d&apos;investir dans des fonds indiciels</li>
               <li>Réduisez les dépenses non essentielles de 5%</li>
             </ul>
           </div>

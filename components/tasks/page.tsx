@@ -24,6 +24,7 @@ export default function TaskBoard() {
 
   const [pomodoroTime, setPomodoroTime] = useState(25 * 60);
   const [isPomoderoActive, setIsPomodoroActive] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [goalProgress, setGoalProgress] = useState(65);
   const [waterIntake, setWaterIntake] = useState(0);
 
@@ -36,7 +37,7 @@ export default function TaskBoard() {
     }
   };
 
-  const toggleTask = (id) => {
+  const toggleTask = (id: number) => {
     setTasks(
       tasks.map((task) =>
         task.id === id ? { ...task, completed: !task.completed } : task
@@ -44,7 +45,7 @@ export default function TaskBoard() {
     );
   };
 
-  const deleteTask = (id) => {
+  const deleteTask = (id: number) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
@@ -67,7 +68,7 @@ export default function TaskBoard() {
     clearInterval(pomodoroTime);
   };
 
-  const formatTime = (time) => {
+  const formatTime = (time: number) => {
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
     return `${minutes.toString().padStart(2, "0")}:${seconds
@@ -172,7 +173,7 @@ export default function TaskBoard() {
       </Card>
       <Card>
         <CardHeader>
-          <CardTitle>Suivi de l'eau</CardTitle>
+          <CardTitle>Suivi de l&apos;eau</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="space-y-2">

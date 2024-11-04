@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   Camera,
@@ -21,7 +22,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
-import { toast } from "@/components/ui/use-toast";
+import { toast } from "../ui/use-toast";
 
 export default function KitchenBoard() {
   const [mealPhoto, setMealPhoto] = useState<string | null>(null);
@@ -158,10 +159,12 @@ export default function KitchenBoard() {
             />
           </div>
           {mealPhoto && (
-            <div className="mb-4">
-              <img
+            <div>
+              <Image
                 src={mealPhoto}
                 alt="Repas"
+                width={500}
+                height={500}
                 className="w-full max-w-md mx-auto rounded-lg shadow-md"
               />
             </div>

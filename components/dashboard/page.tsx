@@ -18,7 +18,7 @@ import {
 import { ChartContainer } from "../ui/chart";
 import { Switch } from "../ui/swtich";
 
-export default function Dashboard() {
+export default function DashboardHome() {
   const [productivityScore, setProductivityScore] = useState(75);
   const [sleepScore, setSleepScore] = useState(80);
   const [hydrationScore, setHydrationScore] = useState(60);
@@ -53,7 +53,7 @@ export default function Dashboard() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [totalTasks]);
 
   return (
     <>

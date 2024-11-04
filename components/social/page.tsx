@@ -9,10 +9,10 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { toast } from "@/components/ui/use-toast";
+import { toast } from "../ui/use-toast";
 
 export default function SocialBoard() {
-  const congratulate = (name) => {
+  const congratulate = (name: string) => {
     toast({
       title: "Félicitations envoyées",
       description: `Vous avez félicité ${name} pour son accomplissement !`,
@@ -31,7 +31,8 @@ export default function SocialBoard() {
       <CardHeader>
         <CardTitle>Communauté</CardTitle>
         <CardDescription>
-          Connectez-vous avec d'autres utilisateurs et partagez vos progrès.
+          Connectez-vous avec d&apos;autres utilisateurs et partagez vos
+          progrès.
         </CardDescription>
       </CardHeader>
       <CardContent>
