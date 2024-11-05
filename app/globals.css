@@ -81,7 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
